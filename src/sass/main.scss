@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
+  line-height: 1.2;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 3fr;
+  background-color: #ffffff;
+  padding: 0 0 .6em 0;
+  height: 9vh;
+  box-shadow: 0 0 0.5em 0 #0A70AE;
+}
+.get {
+  text-transform: uppercase;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bolder;
+}
+.grow {
+  flex-grow: 1;
+}
+
+.logo {
+  width: 3em;
+}
+
+.nav-logo {
+  padding-left: 8em;
+}
+
+.headerLogo {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+
+.logoName, .top-signIn {
+  font-weight: lighter;
+  letter-spacing: 5px;
+  color: #0A70AE;
+  padding: 0.2em 0 0 0.5em;
+  text-transform: capitalize;
+}
+
+.nav-signIn {
+  padding-right: 15em;
+}
+
+.top-signIn {
+  float: right;
+  padding: 1em;
+  border-radius: .3em;
+  border: .5px solid #0A70AE;
+  cursor: pointer;
+}
+
+.top-signIn:hover {
+  background-color: #0A70AE;
+  color: #ffffff;
+
+}
+
+.main header {
+  color: #0A70AE;
+}
+
+.holder {
+  flex-shrink: 0;
+  margin: 15em 10em 0 5em;
+  padding: 1.2em;
+  flex-wrap: wrap-reverse;
+}
+
+.btn01 {
+  width: 25em;
+  height: 4em;
+  border-radius: .5em;
+  font-size: 15px;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #0A70AE;
+  border: none;
+  text-transform: uppercase;
+
+}
+
+.material-icons {
+  font-size: inherit;
+}
+
+.hovers {
+  cursor: pointer;
+}
+.bg-info :hover {
+  background-color:green;
+}
+.bg-success :hover {
+  background-color:#0787F8;
+}
+.info {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  margin: auto;
+  text-align: center;
+}
+.title {
+  color: white;
+}
+
+.sub {
+  font-style: normal;
+  font-weight: lighter;
+  color: black;
+}
+
+.mini {
+  font-style: italic;
+  font-weight: lighter;
+  color: #dfdbdb;
+}
