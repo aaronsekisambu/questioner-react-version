@@ -1,0 +1,40 @@
+.input-group {
+  position: relative;
+  margin-bottom: 32px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.bg-color {
+  background-color: #e5e5e5;
+}
+
+.center-me {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  div {
+    margin: auto;
+    padding: auto;
+  }
+}
+
+.subtitle-size {
+  font-size: 18px;
+}
+
+.middle-image:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  @media all and (min-width: 768px){
+    .pt-md-11, .pt-md-11 {
+      padding-top: 15rem !important;
+    }
+    .subtitle-size {
+      font-size: 15px;
+    }
+
+    
+  }
