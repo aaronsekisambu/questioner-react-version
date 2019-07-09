@@ -1,10 +1,14 @@
-import React, { Component, Fragment } from "react";
-import { Link } from "react-router-dom";
-import Navigation from "./navigation";
-import Welcome from "./welcome";
-import logo from "../../images/logoQnier.png";
-import Img from "../images";
-import artwork from "../../images/developer-manager.png";
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable react/jsx-no-comment-textnodes */
+/* eslint-disable react/button-has-type */
+/* eslint-disable react/prefer-stateless-function */
+import React, { Component, Fragment } from 'react';
+import { Link } from 'react-router-dom';
+import Navigation from './navigation';
+import Welcome from './welcome';
+import logo from '../../images/logoQnier.png';
+import Img from '../images';
+import artwork from '../../images/developer-manager.png';
 
 class LandingPage extends Component {
   render() {
@@ -40,7 +44,9 @@ class LandingPage extends Component {
                 {/* Heading */}
                 <h1 className="display-5 text-center text-md-left">
                   Welcome to
-                  <span className="text-primary"> Questioner</span> <br />
+                  <span className="text-primary"> Questioner</span>
+                  {' '}
+                  <br />
                   <span className="text-warning">Questioning anything</span>
                 </h1>
                 {/* Text */}

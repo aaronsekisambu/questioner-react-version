@@ -5,8 +5,10 @@ module.exports = {
     '\\.(css|less|scss|sass)$': '<rootDir>/src/__mocks__/styleMock.js',
   },
   collectCoverage: true,
+  coverageReporters: ['json', 'text', 'html'],
   collectCoverageFrom: ['src/**/*.{js,jsx}'],
   verbose: true,
   testEnvironment: 'jsdom',
   setupFiles: ['./enzyme.config.js'],
+  modulePathIgnorePatterns: ['<rootDir>/cypress'],
 };
