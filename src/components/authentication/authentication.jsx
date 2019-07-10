@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { GoogleLogin } from 'react-google-login';
+import { toast } from 'react-toastify';
 import '../../styles/getStarted.scss';
 import PropTypes from 'prop-types';
 import Img from '../images';
@@ -14,8 +15,18 @@ class Authentication extends Component {
     this.state = {
       isAuthenticated: false,
       token: '',
-      user: null,
+      user: {},
     };
+  }
+
+  componentDidUpdate() {
+    const { user } = this.props;
+    if (user !== undefined) {
+      const { message } = user;
+      const nowAccessedOrNot = user !== undefined ? message : 'Check your credentials';
+      return this.notify(nowAccessedOrNot);
+    }
+    return null;
   }
 
   responseGoogle = ({ response, provider }) => {
@@ -27,6 +38,8 @@ class Authentication extends Component {
   onFailure = (error) => {
     console.log(error);
   };
+
+  notify = success => toast.success(success);
 
   render() {
     const content = this.state.isAuthenticated ? (
@@ -100,7 +113,7 @@ Authentication.propTypes = {
 };
 
 const mapStateToProps = state => ({
-  user: state.user,
+  user: state.userAccess.user,
 });
 
 export default connect(

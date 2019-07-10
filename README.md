@@ -1,11 +1,8 @@
-<<<<<<< HEAD
 [![CircleCI](https://circleci.com/gh/aaronsekisambu/questioner-react-version.svg?style=svg)](https://circleci.com/gh/aaronsekisambu/questioner-react-version)
 [![Maintainability](https://api.codeclimate.com/v1/badges/673ee7e2b4ae276cb3ce/maintainability)](https://codeclimate.com/github/aaronsekisambu/questioner-react-version/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/673ee7e2b4ae276cb3ce/test_coverage)](https://codeclimate.com/github/aaronsekisambu/questioner-react-version/test_coverage)
 
 
 
-=======
->>>>>>> initial commit
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

@@ -1,5 +1,5 @@
 const initialState = {
-  user: {}
-}
+  userAccess: {},
+};
 
-export default initialState
+export default initialState;
