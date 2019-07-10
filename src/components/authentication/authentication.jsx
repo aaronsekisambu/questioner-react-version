@@ -1,42 +1,43 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import { connect } from "react-redux";
-import { GoogleLogin } from "react-google-login";
-import "../../styles/getStarted.scss";
-import Img from "../images";
-import artwork from "../../images/developer-team.png";
-import { userLogin } from "../../redux/action-creators";
-import Button from "./button";
-import PropTypes from "prop-types";
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { GoogleLogin } from 'react-google-login';
+import '../../styles/getStarted.scss';
+import PropTypes from 'prop-types';
+import Img from '../images';
+import artwork from '../../images/developer-team.png';
+import { userLogin } from '../../redux/action-creators';
 
 class Authentication extends Component {
   constructor(props) {
     super();
     this.state = {
       isAuthenticated: false,
-      token: "",
-      user: null
+      token: '',
+      user: null,
     };
   }
-  responseGoogle = ({response, provider}) => {
+
+  responseGoogle = ({ response, provider }) => {
     const { userLogin } = this.props;
     const { accessToken } = response;
     userLogin(accessToken, provider);
   };
 
-  onFailure = error => {
+  onFailure = (error) => {
     console.log(error);
   };
+
   render() {
-    let content = !!this.state.isAuthenticated ? (
-      "Logged out"
+    const content = this.state.isAuthenticated ? (
+      'Logged out'
     ) : (
       <GoogleLogin
         clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}
         buttonText="Login"
-        onSuccess={response => this.responseGoogle({ response, provider: 'google-plus'})}
+        onSuccess={response => this.responseGoogle({ response, provider: 'google-plus' })}
         onFailure={this.onFailure}
-        cookiePolicy={"single_host_origin"}
+        cookiePolicy="single_host_origin"
       >
         Sign in with Google
         <i className="d-none d-md-inline ml-2 mr-2 zmdi zmdi-chevron-right" />
@@ -51,13 +52,18 @@ class Authentication extends Component {
                 <div className="card-body p-4 p-md-5">
                   <h2 className="display">
                     Welcome to back
-                    <span className="text-warning"> Questioner</span> <br />
+                    <span className="text-warning"> Questioner</span>
+                    {' '}
+                    <br />
                     <span className="subtitle-size lead font-weight-bold text-info pb-3 mb-5 border-bottom border-light ">
-                      Let's meet some{" "}
+                      Let's meet some
+                      {' '}
                       <span className="text-warning text-capitalize font-weight-lighter">
-                        {" "}
-                        questions{" "}
-                      </span>{" "}
+                        {' '}
+                        questions
+                        {' '}
+                      </span>
+                      {' '}
                       that need answers
                     </span>
                   </h2>
@@ -90,14 +96,14 @@ class Authentication extends Component {
 }
 
 Authentication.propTypes = {
-  userLogin: PropTypes.func.isRequired
+  userLogin: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = state => ({
-  user: state.user
+  user: state.user,
 });
 
 export default connect(
   mapStateToProps,
-  { userLogin }
+  { userLogin },
 )(Authentication);
