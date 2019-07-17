@@ -3,7 +3,7 @@
 
 
 
-This project was bootstrapped with [webpack](https://webpack.js.org).
+This project created by [webpack](https://webpack.js.org).
 
 ## Available Scripts
 
