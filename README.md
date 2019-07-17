@@ -1,6 +1,5 @@
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/673ee7e2b4ae276cb3ce/maintainability)](https://codeclimate.com/github/aaronsekisambu/questioner-react-version/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/673ee7e2b4ae276cb3ce/test_coverage)](https://codeclimate.com/github/aaronsekisambu/questioner-react-version/test_coverage)
-
+[![Maintainability](https://api.codeclimate.com/v1/badges/673ee7e2b4ae276cb3ce/maintainability)](https://codeclimate.com/github/aaronsekisambu/questioner-react-version/maintainability) [![Test Coverage]
 
 
 This project created by [webpack](https://webpack.js.org).
