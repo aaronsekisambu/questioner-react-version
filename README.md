@@ -1,5 +1,5 @@
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/673ee7e2b4ae276cb3ce/maintainability)](https://codeclimate.com/github/aaronsekisambu/questioner-react-version/maintainability) [![Test Coverage]
+[![Maintainability](https://api.codeclimate.com/v1/badges/673ee7e2b4ae276cb3ce/maintainability)]
 
 
 This project created by [webpack](https://webpack.js.org).
